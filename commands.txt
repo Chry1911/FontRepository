@@ -1,0 +1,12 @@
+ container_commands:
+    01_download_arial_font:
+      command: wget https://github.com/Chry1911/FontRepository/raw/main/Arial.zip
+    02_unzip_font:
+      command: unzip Arial.zip
+    03_creat_fontdir:
+      command: mkdir -p /usr/share/fonts/arial
+    04_mv_font:
+      command: mv *.ttf /usr/share/fonts/arial
+    05_add_font_cache:
+      command: fc-cache -r
+
