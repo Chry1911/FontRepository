@@ -10,3 +10,16 @@
     05_add_font_cache:
       command: fc-cache -r
 
+
+container_commands:
+    01_download_arial_font:
+      command: wget https://github.com/Chry1911/FontRepository/raw/main/CenturyGothic.zip
+    02_unzip_font:
+      command: unzip CenturyGothic.zip
+    03_creat_fontdir:
+      command: mkdir -p /usr/share/fonts/centuryGothic
+    04_mv_font:
+      command: mv *.ttf /usr/share/fonts/centuryGothic
+    05_add_font_cache:
+      command: fc-cache -r
+
